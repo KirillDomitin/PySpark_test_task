@@ -6,23 +6,24 @@
 
 
 ****
-**Решение**
+### Решение
+Датафреймы находятся в папке data_frames в формате '.csv'
 
-Задание выполнялось в JupyterLab с установленным PySpark.
-Запуск
+**Для запуска python скрипта клонируем репозиторий**
+```commandline
+git clone https://github.com/KirillDomitin/PySpark_test_task.git
+cd PySpark_test_task
+pip install -r requirements.txt
+python3 main.py
+```
+Зависимости:
+- pyspark~=3.5.5
+
+**Для запускаJupyterLab с установленным PySpark.**
+
+Запуск:
 ```commandline
 docker-compose up -d
 ```
 После запуска контейнера в логах будет ссылка с токеном, которую необходимо скопировать в браузер
 В корне проекта находится файл jupyter с решением test_task.ipynb
-
-Датафреймы находятся в папке data_frames в формате '.csv'
-
-Запуск python скрипта 
-```commandline
-
-pip install -r requirements.txt
-```
-```commandline
-python main.py
-```
